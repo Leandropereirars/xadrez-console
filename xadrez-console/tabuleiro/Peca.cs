@@ -8,12 +8,20 @@ namespace tabuleiro
         public int qtdeMovimentos { get; protected set; }
         public Tabuleiro tab { get; protected set; }
 
-        public Peca(Posicao posicao, Tabuleiro tab, Cor cor)
+        /// <summary>
+        /// Peça com sua posição no tabuleiro com respectiva cor
+        /// </summary>
+        /// <param name="posicao">Posição de linha e coluna da peça</param>
+        /// <param name="tab">Tabuleiro criado para  o jogo</param>
+        /// <param name="cor">Cor da peça</param>
+        public Peca(Tabuleiro tab, Cor cor)
         {
-            this.posicao = posicao;
+            this.posicao = null;
             this.tab = tab;
             this.cor = cor;
             this.qtdeMovimentos = 0;
         }
+
+
     }
 }
