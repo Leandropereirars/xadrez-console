@@ -67,7 +67,7 @@ namespace xadrez
                 mat[pos.linha, pos.coluna] = true;
             }
 
-            //posição abaixo do Rei
+            //posição esquerda do Rei
             pos.definirValores(posicao.linha , posicao.coluna -1 );
             if (tab.posicaoValida(pos) && podeMover(pos))
             {
@@ -81,8 +81,6 @@ namespace xadrez
                 mat[pos.linha, pos.coluna] = true;
             }
             return mat;
-
-            //throw new System.NotImplementedException();
         }
     }
 }

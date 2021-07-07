@@ -73,11 +73,7 @@ namespace xadrez
                 }
                 pos.coluna = pos.coluna - 1;
             }
-
-
             return mat;
-
-            //throw new System.NotImplementedException();
         }
     }
 }
